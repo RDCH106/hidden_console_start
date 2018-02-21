@@ -1,2 +1,3 @@
-# hidden_console_start
+# Hidden Console Start
+
 Hide console and execute application in background
