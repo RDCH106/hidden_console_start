@@ -6,6 +6,9 @@ import argparse
 import threading
 
 
+def worker(app):
+    HCSProcess(app).run()
+
 class HCS(object):
     def __init__(self):
         self.meta = Metadata()
@@ -20,7 +23,10 @@ class HCS(object):
         self.args = parser.parse_args()
 
     def run(self):
-        pass
+        for app in self.args.execute:
+            t = threading.Thread(target=worker, args=(app,))
+            self.__threads.append(t)
+            t.start()
 
 
 if __name__ == "__main__":
