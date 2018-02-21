@@ -16,8 +16,9 @@ class HCS(object):
         parser.add_argument('-v', '--version', action='version', version=self.meta.get_version())
         parser.add_argument('-e', '--execute', dest='execute',
                             help='Executables to launch (can be a space seperated list)',
-                            metavar='S', type=str, nargs='+')
-        
+                            metavar='APP', type=str, nargs='+')
+        self.args = parser.parse_args()
+
     def run(self):
         pass
 
