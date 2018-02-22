@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from hiddenconsolestart.metadata import Metadata
-from hiddenconsolestart.process import HCSProcess
+from metadata import Metadata
+from process import HCSProcess
 import argparse
 import threading
 from time import sleep
