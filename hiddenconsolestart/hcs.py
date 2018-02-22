@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from hiddenconsolestart.metadata import Metadata
-from hiddenconsolestart.subprocess import HCSProcess
+from hiddenconsolestart.process import HCSProcess
 import argparse
 import threading
 
 
 def worker(app):
     HCSProcess(app).run()
+
 
 class HCS(object):
     def __init__(self):
