@@ -23,6 +23,8 @@ class HCS(object):
         self.args = parser.parse_args()
 
     def run(self):
+        if not self.args.execute:
+            exit(0)
         for app in self.args.execute:
             t = threading.Thread(target=worker, args=(app,))
             self.__threads.append(t)
