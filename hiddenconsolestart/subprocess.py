@@ -9,6 +9,6 @@ class HCSProcess(object):
         self.__p = None
 
     def run(self):
-        self.__p = sub.Popen('start_basic_xampp.bat', stdout=sub.PIPE, stderr=sub.PIPE, shell=True)
+        self.__p = sub.Popen(self.__app, stdout=sub.PIPE, stderr=sub.PIPE, shell=True)
         output, errors = self.__p.communicate()
 
