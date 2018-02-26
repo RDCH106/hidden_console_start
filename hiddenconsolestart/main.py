@@ -4,4 +4,4 @@ import hiddenconsolestart.hcs
 
 
 def main():
-    hiddenconsolestart.hcs.HCS.run()
+    hiddenconsolestart.hcs.HCS().run()
