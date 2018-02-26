@@ -77,7 +77,7 @@ setup(
     url = 'https://github.com/RDCH106/hidden_console_start',
     download_url = 'https://github.com/RDCH106/hidden_console_start/archive/v'+metadata.get_version()+'.tar.gz',
     entry_points={
-        'console_scripts': ['hcs=hcs.main:main'],
+        'console_scripts': ['hcs=hiddenconsolestart.main:main'],
     },
     keywords = 'background console windows gnu-linux',
     classifiers = ['Programming Language :: Python',
