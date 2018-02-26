@@ -65,7 +65,7 @@ The example executes ping to ``127.0.0.1`` saves the result in
 
 
 setup(
-    name = 'Hidden Console Start',
+    name = 'hcs',
     packages = ['hiddenconsolestart'],
     install_requires = requirements(),
     version = metadata.get_version(),
