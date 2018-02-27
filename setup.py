@@ -16,7 +16,7 @@ def requirements():
 
 long_description = """
 Hidden Console Start ⚙️
-======================
+=======================
 
 Hide console and execute applications in background. HCS (Hidden Console
 Start) is a good alternative to simulate background process (process &)
