@@ -33,7 +33,7 @@ as in GNU/Linux systems.
 
 ::
 
-    $ pythonw hcs.pyw -e "ping 127.0.0.1 > log.txt"
+    $ hcs -e "ping 127.0.0.1 > log.txt"
 
 What can I do with HCS?
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,22 +45,26 @@ What can I do with HCS?
 Installation
 ~~~~~~~~~~~~
 
-You can install from source with:
+You can install or upgrade HCS with:
+
+``$ pip install hcs --upgrade``
+
+Or you can install from source with:
 
 .. code:: bash
 
     $ git clone https://github.com/RDCH106/hidden_console_start.git --recursive
-    $ cd hidden_console_start/hiddenconsolestart
-    $ python hcs.pyw   #Execution
+    $ cd hidden_console_start
+    $ pip install .
 
 Quick example
 ~~~~~~~~~~~~~
 
 .. code:: bash
 
-    $ pythonw hcs.pyw -e "ping 127.0.0.1 > log.txt" "mspaint"
+    $ hcs -e "ping 127.0.0.1 > log.txt" "mspaint"
 
-The example executes ping to ``127.0.0.1`` saves the result in
+The example executes ping to ``127.0.0.1`` redirecting the result to
 ``log.txt`` file and launch Microsoft Paint at the same time.
     """
 
