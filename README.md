@@ -3,6 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/hcs.svg)](https://pypi.python.org/pypi/hcs)
 [![PyPI](https://img.shields.io/pypi/pyversions/hcs.svg)](https://pypi.python.org/pypi/hcs)
 [![PyPI](https://img.shields.io/pypi/l/hcs.svg)](https://github.com/RDCH106/hidden_console_start/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/RDCH106/hidden_console_start.svg?branch=master)](https://travis-ci.org/RDCH106/hidden_console_start)
 
 Hide console and execute applications in background.
 HCS (Hidden Console Start) is a good alternative to simulate background process (process &) as in GNU/Linux systems.
